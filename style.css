@@ -1,0 +1,195 @@
+*{
+    list-style: none;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+section {
+    margin: 60px 0;
+}
+button{
+    color: white;
+    background-color: #E02C6D;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .55s ;
+    font-size: 16px;
+}
+button:hover{
+    background-color: black;
+    letter-spacing: 1px;
+}
+i{
+    margin: 5px 0 0 5px;
+}
+
+hr{
+    opacity: .2;
+}
+/* header section start */
+header{
+    margin: 0 5%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+nav ol{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ol li{
+    padding: 20px;
+    cursor: pointer;
+}
+.hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 300px;
+}
+.hero>div{
+    flex: 1;
+}
+.hero-img img{
+    background-image: url("./images/Circle\ design.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70%;
+}
+.hero-img{
+    display: flex;
+    align-items: center;
+}
+.hero h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+.hero p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -30px;
+}
+
+/* main section  */
+main{
+    margin: 80px 5%;
+}
+
+/* brand section */
+.brand-img{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+/* product section */
+
+.product h3{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 29px;
+}
+.product a{
+    color: #E02C6D;
+    font-size: 18px;
+    font-weight: 500;
+}
+.seemore{
+    text-align: right;
+    margin: 25px 10px 0 0;
+
+}
+.card{
+    padding: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+.card p{
+    margin: 5px 0;
+}
+.card h6{
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.containar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.price{
+    font-size: 20px;
+}
+
+/* Feature section  */
+.feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.feature > div{
+    height: 50vh;
+}
+.text{
+    width: 40%;
+}
+.feature img{
+    height: 100%;
+    width: auto;
+}
+
+/* footer section */
+footer{
+    background-color: #0a0826;
+    color: white;
+    text-align: center;
+    padding: 60px 0 ;
+}
+.icon > i{
+    background-color: rgba(255, 255, 255, 0.188);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* responsive design */
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px) {
+    nav
+    {
+        flex-direction: column;
+    }
+    .hero,
+    .feature{
+        flex-direction: column-reverse;
+    }
+    nav ol li{
+        padding: 7px;
+        font-size: 12px;
+    }
+    .hero{
+        gap: 0;
+        text-align: center;
+    }
+    .hero h2{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .brand-img{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .hero-img img,
+    .text,
+    .feature img{
+        width: 100%;
+    }
+}
